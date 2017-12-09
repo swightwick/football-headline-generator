@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FHG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:600i,700,700i|Quicksand:300,400" rel="stylesheet">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://blokkfont-losgordos.netdna-ssl.com/v2/blokkfont.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div id="app">
+
+    <header>
+      <img src="logo.png">
+      <h1>Football Headline Generator</h1>
+      <span>Generate bullshit like the big boys</span>
+    </header>
+    <div id="newspage" v-bind:class="{ active: isActive }">
+        <h3>{{player}}&nbsp;{{action}}&nbsp;{{club}}</h3>
+      </div>
+    <div id="buttons">
+      <button type="button" class="btn" v-on:click="newQuote">Clickbait</button>
+      <button type="button" class="btn btn--outline">
+        <a class="twitter-share-button" v-bind:href="finalUrl" target="_blank">TWEET HEADLINE</a>
+      </button>
+    </div>
+
+</div>
+
+</body>  
+  <script  src="js/index.js"></script>
+</html>

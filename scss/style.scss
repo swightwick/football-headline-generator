@@ -1,0 +1,105 @@
+$title:'EB Garamond', serif;
+$serif:'Quicksand', sans-serif;
+
+body{
+  text-align: center;
+  padding: 0;
+  margin:0;
+}
+a{
+  outline: none;
+  &:visited{
+    outline: none;    
+  }
+}
+
+h1{
+  font-family: $serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 2rem;
+}
+header{
+  background: rgba(0,0,0,1);
+  background-image: -moz-linear-gradient(top, rgba(163,163,163,0) 0%, rgba(0,0,0,1) 100%);
+  background-image: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(163,163,163,0)), color-stop(100%, rgba(0,0,0,1))), url('../pitch.png');
+  background-image: -webkit-linear-gradient(top, rgba(163,163,163,0) 0%, rgba(0,0,0,1) 100%), url('../pitch.png');
+  background-image: -o-linear-gradient(top, rgba(163,163,163,0) 0%, rgba(0,0,0,1) 100%);
+  background-image: -ms-linear-gradient(top, rgba(163,163,163,0) 0%, rgba(0,0,0,1) 100%);
+  background-image: linear-gradient(to bottom, rgba(163,163,163,0) 0%, rgba(0,0,0,1) 100%), url('../pitch.png');
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3a3a3', endColorstr='#000000', GradientType=0 );
+  color: white;
+  padding: 4rem;
+  border-bottom: 1px solid #E76F60;
+  h1{
+    margin: 1rem 0;
+    padding: 0;
+  }
+  span{
+    font-family: $serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+}
+
+#newspage{
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 960px;
+  min-height: 11.75rem;
+  // #page{
+  //   text-align: left;
+  //   width: 70%;
+  //   display: inline-block;
+  // }
+  // #sidebar{
+  //   width: 29%;
+  //   display: inline-block;    
+  // }
+  h3{
+    font-family: $title;
+    display:inline-block;
+    margin: 0 5px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  p{
+    font-family: "BLOKK";
+  }
+}
+
+.btn{
+  background: #222;
+  padding: 1.25rem 2rem;
+  border: none;
+  color: white;
+  font-family: $serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 2rem .5rem;
+  border: 1px solid #222;  
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    background: #555;
+    cursor: pointer;
+  }
+  &--outline{
+    background: transparent;
+    border: 1px solid #222;
+    &:hover a{
+      color: white;
+    }  
+    a{
+      color: #222;
+      text-decoration: none;    
+    }
+  }
+}
+
